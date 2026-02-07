@@ -26,7 +26,7 @@ Data types for each table can be found in
 root_directory/data_types/QueryResults.csv
 ```
 
-but may need tweaking depending on which DBMS is being used, e.g. NVARCHAR(-1) may become NVARCHAR() or TEXT in Postgres.
+but may need tweaking depending on which DBMS is being used, e.g. NVARCHAR(-1) may become VARCHAR() or TEXT in Postgres.
 
 ## Contributing
 
