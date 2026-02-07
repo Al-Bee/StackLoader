@@ -14,7 +14,7 @@ then run the app once to create the necessary directories.
 
 ## Usage
 
-Download .xml files for the required Stack Exchange forum from [https://archive.org/details/stackexchange](Internet Archive) and unpack/copy files into StackConverter's 'xmls' folder.
+Download .xml files for the required Stack Exchange forum from [Internet Archive](https://archive.org/details/stackexchange) and unpack/copy files into StackConverter's 'xmls' folder.
 
 Run the app from the command line, and the xml files will be converted into DBeaver-friendly csv files.
 
