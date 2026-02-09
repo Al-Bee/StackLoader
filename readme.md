@@ -18,7 +18,7 @@ Download .xml files for the required Stack Exchange forum from [Internet Archive
 
 Run the app from the command line, and the xml files will be converted into DBeaver-friendly csv files.
 
-When loading csv files into DBeaver, use " as the quote character, and '\\' as the escape character.
+When loading csv files into DBeaver, use " as the quote character, and \\ as the escape character.
 
 Data types for each table can be found in
 
