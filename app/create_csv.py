@@ -7,6 +7,12 @@ logger = logging.getLogger(__name__)
 from parse_xml import xmlparse
 
 def create_csv() -> None:
+
+    """
+    Converts all .xml files in xmls folder
+    into CSV format and writes to .csv files
+    """
+    
     for f in Path("xmls").iterdir():
         file_path = Path("csvs") / f"{f.stem}.csv"
 
