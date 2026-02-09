@@ -2,6 +2,13 @@ import xmltodict
 from pathlib import Path
 
 def xmlparse(file: Path):
+
+    """
+    Parses an XML file into a dictionary, and
+    returns a list of column names and a list
+    of rows
+    """
+    
     with file.open('r', encoding="utf-8") as f:
         data_dict = xmltodict.parse(f.read())
 
@@ -17,8 +24,10 @@ def xmlparse(file: Path):
         for i in range(len(data_dict[file.stem.lower()]['row'])):
             current = data_dict[file.stem.lower()]['row'][i]
             tdict = {}
+
             for key, value in unique_keys.items():
                 tdict[value] = current.get(key, 'NULL')
+                
             vals.append(tdict)
 
         return [i for i in unique_keys.values()], vals
